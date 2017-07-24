@@ -1,0 +1,450 @@
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+  article, section, nav, header, footer, figure, figcaption {
+   display: block;
+ }
+
+  #page {
+    margin: auto;
+    font-family: "Merriweather", serif;
+    font-size:
+  }
+
+  a {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  h1, h2 {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+
+    #page {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    header {
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      width: 80px;
+    }
+
+    #bem-vindo {
+      background-color: #F8F8F8;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      }
+
+    .bem-vindo {
+      display: flex;
+      width: 100%;
+      font-size: 30px;
+      line-height: 160%;
+      text-transform: uppercase;
+      padding: 30px 0 0 30px;
+      z-index: 1;
+    }
+
+    #bem-vindo .plataforma {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 425px;
+      padding: 0px;
+      background-color: #FCF554;
+      font-size: 1em;
+      word-wrap: break-word;
+    }
+
+    #bem-vindo .plataforma h2{
+      font-size: 26px;
+      padding: 40px 30px 30px 60px;
+    }
+
+  }
+
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  }
+
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+
+    header {
+      display: flex;
+      padding: 50px;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 30px;
+    }
+
+    nav li:last-of-type {
+      margin-right: 0px;
+    }
+
+    nav a {
+      text-transform: uppercase;
+      font-family: "PT Sans";
+      color: #000000;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    .menu_wrapper {
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 0px;
+      top: 150px;
+      background-color: #FFFFFF;
+      left: 0px;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .menu_wrapper.open {
+      height: 350px;
+    }
+
+    nav .menu1, nav .menu2, nav .menu3 {
+      display: flex;
+      flex-direction: column;
+      font-size: 32px;
+      padding-top: 30px;
+      padding-left: 80px;
+    }
+
+    nav ul li a:hover {
+      background: #FCF554;
+    }
+
+    nav ul li a:active{
+      background-color: #000000;
+      color: #FCF554;
+    }
+
+    .active{
+      background-color: #000000;
+      color: #FCF554;
+    }
+
+    /*------Bem-Vindo------*/
+
+    #bem-vindo {
+      background-color: #F8F8F8;
+      height: 380px;
+      display: flex;
+      justify-content: space-between;
+      }
+
+    .bem-vindo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 49%;
+      font-size: 45px;
+      line-height: 150%;
+      text-transform: uppercase;
+      position: relative;
+      bottom: 30px;
+      left: 30px;
+      z-index: 1;
+    }
+
+    #bem-vindo .plataforma {
+      background-color: #FCF554;
+      width: 61%;
+      height: 425px;
+      position: relative;
+      bottom: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 80px;
+    }
+
+    #bem-vindo .plataforma h2{
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
+
+    #bem-vindo .plataforma h3{
+      font-size: 22px;
+    }
+
+    /*------Destaque------*/
+
+    #destaque {
+      padding: 60px 30px 60px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position:relative;
+      right: 50px;
+    }
+
+    .mais-moldura {
+      font-family: "Montserrat", sans-serif;
+      font-size: 150px;
+      padding-right: 10px;
+      margin-left: 50px;
+    }
+
+    .moldura {
+      border: 10px solid #000;
+      display: flex;
+      padding: 50px;
+      width: 80%;
+      max-width: 1010px;
+      min-width: 800px;
+    }
+
+    .moldura h4{
+      padding-bottom: 30px;
+    }
+
+    .moldura h2{
+      font-size: 38px;
+      padding-bottom: 10px;
+    }
+
+    .moldura h1{
+      font-size: 82px;
+      color: #858688;
+      position: relative;
+      left: 50px;
+      z-index: 2;
+    }
+
+    .moldura span.estado h5 {
+      font-family: "PT Sans", sans-serif;
+      text-transform: uppercase;
+      background-color: #FCF554;
+      display: inline;
+      padding: 3px;
+      font-size: 15px;
+    }
+
+    .moldura p {
+      font-family: "PT Sans", sans-serif;
+      text-transform: uppercase;
+    }
+
+    hgroup {
+      display: flex;
+      flex-direction: column;
+    }
+
+    hgroup .social {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 10px;
+      font-size: 12px;
+    }
+
+    span.like {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    span.like img {
+      position: relative;
+      bottom: 2px;
+      left: 2px;
+
+    }
+
+    .jardimalmoinha {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .jardimalmoinha img{
+      margin-right: 50px;
+    }
+
+    /*------Missão------*/
+
+    #missao {
+      background-color: #FCF554;
+      padding: 30px;
+    }
+
+    #missao h4, p {
+      text-align: center;
+    }
+
+    #missao h4 {
+      padding-bottom: 20px;
+    }
+
+    #missao p {
+      font-size: 22px;
+    }
+
+    /*------Outros Destaques------*/
+
+    section {
+      background-color: #F8F8F8;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    article.outrosdestaques {
+      background-color: #FFFFFF;
+      margin: 30px;
+      display: flex;
+      justify-content: space-between;
+      width: 900px;
+      position: relative;
+      flex:initial;
+    }
+
+    hgroup.outrosdestaques {
+      padding: 30px 0px 20px 20px;
+    }
+
+    .outrosdestaques h3 {
+      font-size: 24px;
+    }
+
+    .outrosdestaques h4 {
+      font-size: 18px;
+    }
+
+    .outrosdestaques h2 {
+      font-size: 36px;
+      margin: 20px 0;
+    }
+
+    .outrosdestaques h1 {
+      font-size: 72px;
+      color: #858688;
+    }
+
+    .outrosdestaques .social {
+      display: flex;
+      position: absolute;
+      top: 350px;
+      left: 110px;
+    }
+
+    .outrosdestaques h5 {
+      font-family: "PT Sans", sans-serif;
+      font-size: 12px;
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+
+    span.gosto {
+      display: flex;
+      align-items: center;
+    }
+
+    span.gosto img {
+      position: relative;
+      bottom: 2px;
+      left: 2px;
+    }
+
+    /*------Footer Sitemap------*/
+
+    footer {
+      font-family: "PT Sans", sans-serif;
+      text-transform: uppercase;
+    }
+
+    footer#sitemap {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .footer-item-one, .footer-item-two, .footer-item-three, .footer-item-four {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-item-one h4, .footer-item-two h4, .footer-item-three h4, .footer-item-four h4  {
+      margin-bottom: 10px;
+    }
+
+    footer#sitemap a {
+      font-size: 12px;
+      margin-bottom: 8px;
+      color: #858688;
+    }
+
+    .footer-bar {
+      background-color: #F8F8F8;
+      height: 15px;
+    }
+
+    /*------Footer Sitemap------*/
+
+    footer#social {
+      padding: 50px;
+    }
+
+    footer#social ul {
+      padding-left: 60px;
+    }
+
+    footer#social li {
+      display: inline;
+    }
+
+    footer#social li a img{
+      width: 15px;
+      margin-right: 10px;
+    }
+
+    footer#social img[src="images/youtube_logo.png"] {
+      width: 20px;
+    }
+
+
+    footer#social p {
+      text-align: right;
+      font-size: 10px;
+      color: #858688;
+      margin-right: 45px;
+    }
+
+
+  }
